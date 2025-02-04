@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael's Lists</title>
+
+  <!-- Google Font: Ubuntu -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu font */
+      background-color: #363535; /* Darker gray background */
+      color: #f9f9f9; /* Light text color for contrast */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+    }
+
+    /* Title Box */
+    .title-box {
+      background-color: #407281; /* Blue background */
+      color: white; /* White text */
+      text-align: center;
+      padding: 20px;
+      border-radius: 15px; /* Rounded corners */
+    }
+
+    .title-box h1 {
+      font-size: 1.8rem;
+    }
+
+    /* List Section */
+    .list-section {
+      margin-top: 20px;
+    }
+
+    .list-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* List Styling */
+    .list {
+      list-style-type: disc; /* Add default bullet points */
+      list-style-position: inside; /* Align bullets inside the container */
+      padding-left: 20px; /* Add spacing for alignment */
+    }
+
+    .list-item {
+      background-color: #e0e0e0; /* Light gray background */
+      color: #363535; /* Dark gray text for contrast */
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px; /* Rounded corners */
+      
+      word-wrap: break-word; /* Handle long words gracefully */
+    }
+
+    /* Expandable Behavior */
+    .list-item {
+      display: block; /* Ensures block-level behavior */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Title Section -->
+    <div class="title-box">
+      <h1>Michael's Lists</h1>
+    </div>
+
+    <!-- To-Do/Events Section -->
+    <section class="list-section">
+      <h2>To-Do/Events</h2>
+      <ul class="list">
+        <li class="list-item">Go for corrections</li>
+        <!-- Add more items here -->
+        <li class="list-item">Finish coding project</li>
+        <li class="list-item">Call the dentist</li>
+      </ul>
+    </section>
+
+    <!-- Shopping Needs Section -->
+    <section class="list-section">
+      <h2>Shopping Needs</h2>
+      <ul class="list">
+        <li class="list-item">Replace sharpened pencils</li>
+        <!-- Add more items here -->
+        <li class="list-item">Buy milk and eggs</li>
+        <li class="list-item">Order new headphones</li>
+        <li class="list-item">Trumpet phone mount</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
